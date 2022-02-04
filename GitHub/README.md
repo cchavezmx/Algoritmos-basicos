@@ -37,11 +37,11 @@
   <hr/>
 
   ## Para saber más
-  <>
+  <div>
     <ul>
       <li>
         https://git-scm.com/docs/user-manual
-         pagina oficial :D
+         pagina oficial 😉
       </li>
       <li>
         https://leanpub.com/aprendiendo-git
@@ -50,5 +50,6 @@
           de la mano de programador Senior 🚀
       </li>
     </ul>
+  </div>
   
   
