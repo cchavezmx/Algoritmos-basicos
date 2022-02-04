@@ -37,6 +37,7 @@
   <hr/>
 
   ## Para saber más
+  <>
     <ul>
       <li>
         https://git-scm.com/docs/user-manual
@@ -46,7 +47,7 @@
         https://leanpub.com/aprendiendo-git
           Libro de pago pero interesante donde te explica 
           como es usar Git en un nivel productivo
-          de la mano de programador Senior
+          de la mano de programador Senior 🚀
       </li>
     </ul>
   
