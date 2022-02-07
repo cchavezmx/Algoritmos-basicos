@@ -5,6 +5,8 @@
   // nombre del usuario nombres distintos
   // descripción genérica (misma descripción para todos los usuarios).
 
+
+````
   class Usuario {
     constructor(nombre) {
         this.nombre = nombre;
@@ -14,3 +16,5 @@
 }
 
 let nombres = ['Ana', 'Julio', 'Carlos', 'Javier', 'Diego', 'Karla', 'César', 'Ximena', 'Mariana'];
+
+````
