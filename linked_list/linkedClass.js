@@ -24,7 +24,31 @@ class LinkedList {
       current.next = newNode
     }
   }
-  // remove(datoABorrar)
+  remove(target){
+    // TRIPLE IGUAL
+    if (this.head === null) return
+
+    if (this.head.val === target){
+      this.head = this.head.next
+    } else {
+      let current = this.head
+      let prevNodo = null
+      let nextNodo = null
+
+      while (current.val !== target){
+        console.log(current, 'current')
+        console.log(prevNodo, 'prevNodo')
+        console.log(nextNodo, 'nextNodo')
+
+        prevNodo = current
+        nextNodo = current.next
+        
+        current = current.next
+      }     
+      prevNodo.next = nextNodo.next      
+    }
+
+  }
   // addStart()
   // addBetween()
   // buscar()
@@ -37,4 +61,6 @@ listaEnlazada1.add('A')
 listaEnlazada1.add('B')
 listaEnlazada1.add('C')
 listaEnlazada1.add('D')
+
+listaEnlazada1.remove('C')
 console.log(listaEnlazada1)
