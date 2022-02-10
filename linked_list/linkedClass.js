@@ -64,3 +64,11 @@ listaEnlazada1.add('D')
 
 listaEnlazada1.remove('C')
 console.log(listaEnlazada1)
+
+// este es el metodo para hacer un contador con un for
+// let counter = 0
+// for (let i = 0; i < 10; i++){
+//   counter++
+// }
+
+// console.log(counter, 'este es el contador')
