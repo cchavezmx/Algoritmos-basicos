@@ -13,6 +13,11 @@ const c = new Node('C')
 const d = new Node('D')
 const e = new Node('E')
 const f = new Node('F')
+const g = new Node('G')
+const h = new Node('H')
+const i = new Node('I')
+const j = new Node('J')
+
 
   //      a
   //    /   \  
@@ -48,7 +53,7 @@ const depthFirstValues = (root) => {
       // guardamos el valor del nodo en el array de values
       values.push(current.val)
 
-      // inspeccionamos que el valores examinado tienen mas nodos nodos a la izquieda o a la derecha
+      // inspeccionamos que si current tienen mas nodos nodos a la izquieda o a la derecha
       if(current.right) stack.push(current.right)
       if(current.left) stack.push(current.left)
   }
@@ -118,4 +123,6 @@ breadthFirstValues(a);
 // }
 
 // console.log(Boolean(nodo.left))
+
+
 
