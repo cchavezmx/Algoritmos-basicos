@@ -1,0 +1,8 @@
+*{
+  background-color: aqua;
+  font-size: 30px;
+}
+
+.active{
+  background-color: red;
+}
