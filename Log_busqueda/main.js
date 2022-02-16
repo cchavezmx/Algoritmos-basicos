@@ -85,27 +85,35 @@ const busquedaFor = (array, valor) => {
         type: "User"
       }
     ]
-
-
+    
 //  Ejemplo real o del dia a dia
 // retorne el tipo de usuario
  const busquedaIndexOf = (array, valor) => {
     // como props  necesito el array de permisos
     // el nombre del usuario
     // una array solo de nombres de personas
+
     // el Map es la combinacion de guardar elementos que voy iterando dentro de un array
     let arrayPersonas = array.map(user => user.name)
 
-    let currentUser = array.indexOf(valor)
-    console.log(currentUser)
+    // buscar el index del elemento que quiero encontrar
+    let currentIndexUser = arrayPersonas.indexOf(valor)
 
     // si encuentra el usuario me retorne el tipo de usuario
+    if(currentIndexUser !== -1){
+      return array[currentIndexUser].type
+    }
+    
+    if(currentIndexUser === -1){
+      return "Este usuario no cuenta con permisos"
+    }
+
     // si no se encuentra me retorne un mensaje de error
  }
-
- let resultIndexReal = busquedaIndexOf(arrayPermisos, "Veronica")
+let userLogion = "Pepe"
+ let resultIndexReal = busquedaIndexOf(arrayPermisos, userLogion)
 //  => "user"
- console.log(resultIndexReal)
+ console.log(`El tipo de usuario para ${userLogion} es de ${resultIndexReal} `)
 
 
 
