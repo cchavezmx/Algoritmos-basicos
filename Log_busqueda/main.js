@@ -46,8 +46,59 @@ const busquedaLoop = (array, valor) => {
 }
 
 const currentUser = 'Sam'
-const resultado = busquedaLoop(personas, currentUser)
-console.log(resultado)
-if (resultado === -1){
-  console.log(`No existe el tal ${currentUser}`)
+// const resultado = busquedaLoop(personas, currentUser)
+// console.log(resultado, 'la posicion de la persona dentro del array')
+// if (resultado === -1){
+//   console.log(`No existe el tal ${currentUser}`)
+// }
+
+// if (resultado !== -1){
+//   console.log(`Bienvendid@ ${personas[resultado]}`)
+// }
+
+const busquedaFor = (array, valor) => {
+  for (let i = 0; i < array.length; i++){
+    if (array[i] === valor){      
+      // nos retorna el index si encontramos el valor
+      return i
+    } 
+  }  
+  // si no encontramos el valor nos retorna -1
+  return -1
 }
+
+// let resultadoFor = busquedaFor(personas, 'Pepe')
+//  console.log(resultadoFor, 'esto es del for')
+
+ /*
+    dentro de una web tenemos un metodo que nos retorna el nombre del usuario
+ */
+
+    // array de permisos
+    const arrayPermisos = [
+      {
+        name: "Carlos",
+        type: "Admin"
+      }, 
+      {
+        name: "Veronica",
+        type: "User"
+      }
+    ]
+
+
+//  Ejemplo real o del dia a dia
+// retorne el tipo de usuario
+ const busquedaIndexOf = (array, valor) => {
+    // como props  necesito el array de permisos
+    // el nombre del usuario
+    let currentUser = array.indexOf(valor)
+    console.log(currentUser)
+
+    // si encuentra el usuario me retorne el tipo de usuario
+    // si no se encuentra me retorne un mensaje de error
+ }
+
+ let resultIndexReal = busquedaIndexOf(arrayPermisos, "Veronica")
+ console.log(resultIndexReal)
+
