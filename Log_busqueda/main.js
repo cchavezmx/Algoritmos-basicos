@@ -92,6 +92,10 @@ const busquedaFor = (array, valor) => {
  const busquedaIndexOf = (array, valor) => {
     // como props  necesito el array de permisos
     // el nombre del usuario
+    // una array solo de nombres de personas
+    // el Map es la combinacion de guardar elementos que voy iterando dentro de un array
+    let arrayPersonas = array.map(user => user.name)
+
     let currentUser = array.indexOf(valor)
     console.log(currentUser)
 
@@ -100,5 +104,30 @@ const busquedaFor = (array, valor) => {
  }
 
  let resultIndexReal = busquedaIndexOf(arrayPermisos, "Veronica")
+//  => "user"
  console.log(resultIndexReal)
+
+
+
+// EJEMPLO DE MAP VS FOR
+//  const arrayPermisos = [
+//   {
+//     name: 'Carlos',
+//     type: 'Admin',
+//   },
+//   {
+//     name: 'Veronica',
+//     type: 'User',
+//   },
+// ];
+
+// const resultNombres = arrayPermisos.map((item) => item.name);
+// console.log(resultNombres);
+
+// const valoresNombres = [];
+// for (let i = 0; i < arrayPermisos.length; i++) {
+//   valoresNombres.push(arrayPermisos[i].name);
+// }
+// console.log(valoresNombres);
+
 
