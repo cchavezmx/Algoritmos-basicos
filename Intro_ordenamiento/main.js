@@ -87,3 +87,22 @@ const merge = (left, right) => {
 
 let results = mergeSort(miArray)
 console.log(results)
+
+
+// COMO SE HACE DENTRO DEL FRONT
+const mix = [1, 2, 3, 4, 5, 6];
+// retorna un array con orden aleatorio
+console.log('random');
+mix.sort(() => Math.random() - 0.7);
+
+// para acomodar una lista de menor a menor
+console.log('ordenar numeros');
+const desorden = [14, 54, 65, 12, 756, 87];
+desorden.sort((a, b) => a - b);
+
+// para acomodar de forma alfabetica
+console.log('ordenar nombres');
+const list = ['Victoria', 'Abril', 'Carlos', 'Walter'];
+list.sort();
+// array.sort(() => Math.random() - 0.5);
+// console.log(array);
