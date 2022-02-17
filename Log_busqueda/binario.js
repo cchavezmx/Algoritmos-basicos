@@ -52,3 +52,4 @@ const busquedaBinaria = (array, elemento) => {
 
 let resultado = busquedaBinaria(myOtherArray, 10)
 console.log(resultado, 'hola')
+
