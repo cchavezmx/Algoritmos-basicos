@@ -1,5 +1,6 @@
 <h1>Lista de comando basicos</h1>
-  ## git clone <url>
+
+  ## git clone url_del_repositorio
     Clona un repositorio, recuerda que la url es de http al momento de copiar la url de repositorio
 
   ## git init
